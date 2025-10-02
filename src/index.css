@@ -1,179 +1,8 @@
-/* :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-h1 {
-  font-family: "inter";
-}
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.smallbox {
-  border: none;
-  width: 377px;
-  height: 290px;
-  padding: 24px, 16px, 24px, 16px;
-  box-shadow: 0 1px 10px rgba(0.3, 0.3, 0.3, 0.3);
-  border-radius: 5px;
-}
-
-.title {
-  font-family: "inter";
-  font-weight: 600;
-  font-style: "semi bold";
-  font-size: 20px;
-}
-
-.inputbox {
-  width: 269px;
-  height: 40px;
-  border-radius: 6px;
-  border: solid 1px #e4e4e7;
-  padding: 8px, 16px, 8px, 16px;
-  padding-left: 10px;
-}
-.btn {
-  height: 45px;
-  width: 60px;
-  border-radius: 6px;
-  border: none;
-  background-color: #3c82f6;
-  color: white;
-  margin-left: 6px;
-  cursor: pointer;
-}
-.btndiv {
-  display: flex;
-  width: 345px;
-  height: 32px;
-  gap: 6px;
-  margin-left: 16px;
-  margin-top: 19px;
-}
-
-.all {
-  width: 38px;
-  height: 32px;
-  padding: 4px, 12px, 4px, 12px;
-  border-radius: 6px;
-  border: none;
-  color: #363636;
-  background-color: #f3f4f6;
-  cursor: pointer;
-}
-.active {
-  width: 60px;
-  height: 32px;
-  border-radius: 6px;
-  border: none;
-  background-color: #f3f4f6;
-  color: #363636;
-  gap: 10px;
-  cursor: pointer;
-}
-.completed {
-  width: 87px;
-  height: 32px;
-  border-radius: 6px;
-  border: none;
-  background-color: #f3f4f6;
-  color: #363636;
-  gap: 10px;
-  cursor: pointer;
-}
-
-.text {
-  font-family: "inter";
-  font-weight: 400;
-  font-style: "regular";
-  font-size: 14px;
-  color: #6b7280;
-  margin-top: 32px;
-}
-.footertxt {
-  font-family: "inter";
-  font-weight: 400;
-  font-style: "regular";
-  font-size: 12px;
-  color: #6b7280;
-  margin-top: 25px;
-}
-.link {
-  color: #3b73ed;
-  text-decoration: none;
-} */
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 ul {
-  padding-left: 0; /* padding-г арилгах */
-  margin: 0; /* margin-г арилгах */
-  list-style-type: none; /* bullet-г арилгах */
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .container {
@@ -214,7 +43,15 @@ ul {
   color: white;
   margin-left: 6px;
   cursor: pointer;
+  transition: 0.5s;
 }
+.btn:hover {
+  background-color: #6ca4fe;
+}
+.btn:active {
+  background-color: #9abcf3;
+}
+
 .btndiv {
   display: flex;
   width: 345px;
@@ -235,6 +72,7 @@ ul {
   background-color: #f3f4f6;
   cursor: pointer;
 }
+
 .active {
   width: 60px;
   height: 32px;
@@ -245,6 +83,7 @@ ul {
   gap: 10px;
   cursor: pointer;
 }
+
 .completed {
   width: 87px;
   height: 32px;
@@ -256,7 +95,13 @@ ul {
   cursor: pointer;
 }
 
-.text {
+.activebtn {
+  background: #1e90ff;
+  color: white;
+  border-color: #1e90ff;
+}
+
+.active .text {
   font-family: "inter";
   font-weight: 400;
   font-style: "regular";
@@ -290,11 +135,19 @@ ul {
 .delete-btn {
   width: 77px;
   height: 30px;
-  background-color: #fef2f2;
+  background-color: #f8e5e5;
   border: none;
   border-radius: 6px;
   color: #ef4444;
   left: 300px;
+  transition: 0.5s;
+}
+.delete-btn:hover {
+  background-color: #ff0000f7;
+  color: white;
+}
+.delete-btn:active {
+  background-color: #d0d0d0;
 }
 
 .task-list {
@@ -306,4 +159,11 @@ ul {
 }
 .txt {
   margin-left: 10px;
+}
+.text {
+  font-family: "inter";
+  font-weight: 400;
+  font-style: "regular";
+  font-size: 14px;
+  color: #6b7280;
 }
