@@ -129,7 +129,7 @@ ul {
   align-items: center;
   gap: 40px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #f9fafb;
 }
 .delete-btn {
@@ -166,4 +166,10 @@ ul {
   font-style: "regular";
   font-size: 14px;
   color: #6b7280;
+}
+
+.done .txt {
+  text-decoration: line-through;
+  color: #aaa;
+  transition: all 0.3s ease;
 }

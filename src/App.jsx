@@ -94,7 +94,9 @@ function App() {
                       checked={task.completed}
                       onChange={() => toggleTask(task.id)}
                     />
-                    <span className="txt">{task.text}</span>
+                    <span className={`txt ${task.completed ? "done" : ""}`}>
+                      {task.text}
+                    </span>
                   </div>
                   <button
                     className="delete-btn"
