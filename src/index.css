@@ -71,6 +71,11 @@ ul {
   color: #363636;
   background-color: #f3f4f6;
   cursor: pointer;
+  transition: 0.5s;
+}
+.all:hover {
+  background-color: #3c82f6;
+  color: white;
 }
 
 .active {
@@ -82,6 +87,11 @@ ul {
   color: #363636;
   gap: 10px;
   cursor: pointer;
+  transition: 0.5s;
+}
+.active:hover {
+  background-color: #3c82f6;
+  color: white;
 }
 
 .completed {
@@ -93,6 +103,12 @@ ul {
   color: #363636;
   gap: 10px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.completed:hover {
+  background-color: #3c82f6;
+  color: white;
 }
 
 .activebtn {
